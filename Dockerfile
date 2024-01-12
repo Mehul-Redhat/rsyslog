@@ -1,4 +1,2 @@
 MAINTAINER Prateek Kumawat
-0 B
-4
 LABEL NAME=HIGHSKY IT
