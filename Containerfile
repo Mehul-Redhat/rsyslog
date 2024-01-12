@@ -3,4 +3,7 @@ RUN mkdir -p /var/www
 WORKDIR /
 ADD . /var/www
 RUN npm install -g serve
-CMD PORT=80 serve -s /
+CMD PORT=80 serve -s /var/www
+
+MAINTAINER MehulSolanki
+LABEL NAME=RHCSA
