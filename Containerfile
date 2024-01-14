@@ -1,9 +1,8 @@
-FROM node:latest
+FROM httpd
 RUN mkdir -p /var/www
 WORKDIR /
 ADD Containerfile /var/www
-RUN npm install -g serve
-CMD PORT=80 serve -s /var/www
+EXPOSE 80
 
 MAINTAINER MehulSolanki
 LABEL NAME=RHCSA
